@@ -1,0 +1,89 @@
+section{
+    background-image: url(../img/bg-image-clouds.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-color: #D3E9F6;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container{
+    width:1020px;
+    margin:0 auto;
+    position:relative;
+    z-index: 1;
+}
+.jeep{
+    margin-left:10px;
+}
+.jeep:hover .detail{
+    background-color: #CB5977;
+}
+.detail{
+    width:1000px;
+    height:110px;
+    padding-top: 20px;
+    background-color: white;
+    position:relative;
+    top:-4px;
+}
+.detail span{
+    font-weight:normal;
+
+    font-size:1.1em;
+    margin-left:15px;
+}
+
+/*吉普下面的容器*/
+.container-bottom{
+    width:1020px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*将偶数的块向右移动20px*/
+.container-bottom>.col50:nth-child(2){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(4){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(6){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(8){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(10){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(12){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(14){
+    margin-left:20px;
+}
+.container-bottom>.col50:nth-child(16){
+    margin-left:20px;
+}
+.col50{
+    margin-left:10px;
+    margin-top:15px;
+}
+.col50:hover .details{
+    background-color:#CB5977 ;
+    color:white;
+}
+.details>span{
+    margin-left:20px;
+}
+.col50>a>img{
+    width:490px;
+    height:240px;
+}.col50>.details{
+    width:490px;
+    height:110px;
+    font-size: 1.1em;
+    padding-top: 20px;
+    position: relative;
+    top:-4px;
+ }

@@ -1,0 +1,49 @@
+
+a{
+    color:rgba(58, 58, 58, 0.771);
+    text-decoration:none;
+    cursor: pointer;
+}
+a:hover{
+    color:rgb(22, 21, 21);
+}
+p{
+    margin:0;
+}
+ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', 'STHeiti', 'Microsoft YaHei', Arial, sans-serif;
+}
+.clear-float{
+    clear:both;
+}
+.lf{
+    display:block;
+    float:left;
+}
+.rf{
+    display:block;
+    float:right;
+}
+.pr{
+    position:relative;
+}
+.jz{
+    margin:0 auto;
+    text-align: center;
+}
+.hnys{
+    display:inline-block;
+}
+div{
+    box-sizing: border-box;
+}
+input{
+    box-sizing: border-box;
+}

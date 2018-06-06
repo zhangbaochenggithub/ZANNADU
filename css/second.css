@@ -1,0 +1,120 @@
+.main{
+    background:url(../img/bg-image-clouds.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    background-color: #D3E9F6;
+    width:100%;
+    height:auto;
+}
+.container{
+    width:1020px;
+    height:100%;
+    margin:0 auto;
+    padding-top:20px;
+    position: relative;
+    left:0;
+    overflow:hidden;
+}
+.container>div:first-child{
+    height:35px;
+    font-size:1.5em;
+    margin-bottom: 20px;
+}
+.row{
+    width:1020px;
+    height:360px;
+    float:left;
+}
+.row-first{
+    width:320px;
+    height:356px;
+    position:relative;
+    float:left;
+    margin-left:15px;
+}
+/*照片下面，底部详细信息处*/
+.bottom{
+    width:320px;
+    height:110px;
+}
+.bottom>div:first-child{
+    margin-top:  15px;
+    margin-left: 15px;
+    font-size:0.9em;
+}
+.bottom>div:last-child{
+    margin-left: 15px;
+    font-size:0.9em;
+}
+.detail{
+    width:320px;
+    height:110px;
+    position:relative;
+    margin-bottom:6px;
+    bottom:4px;
+    display: none;
+}
+.detail>h3{
+    margin-left: 15px;
+    color:white;
+    font-weight:normal;
+    font-size:1.1em;
+}
+.detail>a>span{
+    font-size: 1.0em;
+    margin-left: 15px;
+    color:#fff;
+}
+.detail-2>a{
+    color:black;
+    font-weight:bold;
+    font-size:0.8em;
+    margin-left: 15px;
+}
+/*hover*/
+.row-first:hover .bottom{
+    display: none;
+}
+.row-first:hover .detail{
+    display: block;
+    background-color:#CB5977 ;
+}
+.handler{
+    width:13000px;
+    position: relative;
+    left:0;
+    transition: all 1s;
+}
+/*按钮*/
+.btn{
+    position: relative;
+}
+.span-1{
+    position: absolute;
+    left:78%;
+    bottom:59%;
+    z-index: 100;
+    display: block;
+}
+.span-1>img{
+    border-radius: 50%;
+}
+.span-2{
+    position: absolute;
+    bottom:58%;
+    left:19%;
+    z-index: 100;
+    display: block;
+}
+.span-2>img{
+    border-radius: 50%;
+}
+/*8张大图*/
+.picture{
+    width:1000px;
+    margin:0 auto;
+}
+
+
+

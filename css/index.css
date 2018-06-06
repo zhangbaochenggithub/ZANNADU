@@ -1,0 +1,442 @@
+.main{
+    background-color: #E1EBF3;
+}
+section{
+    width:100%;
+}
+.floor1{
+    background-color: #465562;
+}
+.floor1 .small-title{
+    color:white;
+}
+.floor2 .small-title{
+    color:#000;
+}
+.small-title h2{
+    font-weight: normal;
+}
+
+
+/*每个楼层的主要内容*/
+.floor1 .container{
+    padding-bottom: 30px;
+}
+.container{
+    width:1020px;
+    margin:0 auto;
+    /*border:1px solid red;*/
+    padding-top:30px;
+}
+
+/*每个楼层的楼层标题*/
+
+
+/*每个楼层的行*/
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+    margin-bottom:20px;
+}
+/*每个楼层第二行*/
+.container>.row:nth-child(3){
+    margin-bottom:0;
+}
+
+/*每个普通项目的框模型*/
+.item{
+    width: 320px;
+    height: 350px;
+    transition:all .1s linear;
+    position:relative;
+}
+/*每个大项目的框模型*/
+.item-big{
+    width: 670px;
+    height: 350px;
+    transition:all .1s linear;
+    position: relative;
+}
+.item-big img{
+    width: 670px;
+    height:240px;
+}
+.item-big .item-image{
+    height: 240px;
+    position:relative;
+}
+.item-big .item-title{
+    /*width: 670px;*/
+    height: 110px;
+    background-color: #fff;
+    transition: all .14s linear;
+}
+.item-big .item-title>h5{
+    width: 620px;
+    height: 38px;
+    margin:0 auto;
+    padding-top:20px;
+    font-weight:normal;
+}
+
+/*每个普通项目的图片*/
+.item .item-image,.item .item-image>img{
+    position:relative;
+    width: 320px;
+    height: 240px;
+}
+/*项目红丝带*/
+#sidai{
+	position:absolute;
+	top:20px;
+	left:-8px;
+	z-index:400;
+	width:116px;
+	height:72px;
+}
+/*剩余数量*/
+.item-image>.shengyu{
+    position: absolute;
+    width: 90px;
+    height: 62px;
+    top:22px;
+    left:6px;
+    z-index:400;
+    font-size: 14px;
+    color:#fff;
+}
+.item-image>.shengyu>p{
+    margin-top:6px;
+}
+
+/*图标*/
+.icons{
+    width: 75px;
+    height: 30px;
+    position:absolute;
+    bottom:4%;
+    right:8%;
+    z-index:400;
+}
+.icons img,.iconsToggle img{
+    width: 30px;
+    height: 30px;
+    z-index: 400;
+}
+.iconsToggle{
+    display:none;
+    width: 75px;
+    height: 30px;
+    position:absolute;
+    bottom:4%;
+    right:8%;
+    z-index:400;
+}
+
+
+/*每个项目的隐藏小标题*/
+.item .item-image>.hide-title{
+    display:none;
+    background-color: #ebebeb;
+    font-size:14px;
+    position:absolute;
+    bottom:0;
+    padding:5px;
+    opacity:0.8;
+    width:320px;
+    box-sizing: border-box;
+}
+.item-big .item-image>.hide-title{
+    display:none;
+    background-color: #ebebeb;
+    font-size:14px;
+    position:absolute;
+    bottom:0;
+    padding:5px;
+    opacity:0.8;
+    width:670px;
+    box-sizing: border-box;
+}
+/*每个普通项目的大标题*/
+.item .item-title{
+    width: 320px;
+    height: 110px;
+    background-color: #fff;
+    transition: all .14s linear;
+}
+.item .item-title>h5{
+    width: 280px;
+    height: 38px;
+    margin: 0 auto;
+    padding-top:20px;
+    font-weight: normal;
+}
+
+/*视频*/
+#mp4{
+    display:none;
+    width:1280px;
+    height:720px;
+    z-index:16000;
+    position:fixed;
+    top:90px;
+    left:300px
+}
+
+#mp4 img{
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top:30px;
+    right:40px;
+}
+
+
+/*悬停事件*/
+.item:hover .item-title{
+    background-color: #cb5977;
+    color:white;
+}
+.item-big:hover .item-title{
+    background-color: #cb5977;
+    color:white;
+}
+.item:hover .hide-title{
+    display:block;
+}
+.item-big:hover .hide-title{
+    display:block;
+}
+.item:hover{
+    transform: scale(1.012);
+    box-shadow: 0 0 50px #6b6b6b;
+}
+.item-big:hover{
+    transform: scale(1.012);
+    box-shadow: 0 0 50px #6b6b6b;
+}
+.item:hover .iconsToggle{
+    display:block;
+}
+.item:hover .icons{
+    display:none;
+}
+.item-big:hover .iconsToggle{
+    display:block;
+}
+.item-big:hover .icons{
+    display:none;
+}
+
+
+/*视频标题*/
+.video{
+    position: absolute;
+    width: 260px;
+    height: 60px;
+    top:200px;
+    left:180px;
+    font-size: 26px;
+    line-height: 30px;
+    color:#ffb;
+    text-shadow: 4px 4px 5px #b4b4b4;
+}
+.video>img{
+    margin-right:20px;
+}
+
+.video-other{
+    width: 300px;
+
+    background-color: #fff;
+    opacity: .9;
+    position: absolute;
+    right:60px;
+    top:30px;
+    padding:15px 15px;
+    font-size: 15px;
+    text-align: center;
+}
+.video-other>a{
+    display:block;
+    width: 144px;
+    height: 39px;
+    background-color: #EF426F;
+    border-radius: 25px;
+    text-align: center;
+    line-height:39px;
+    color:#fff;
+    margin-left:120px;
+}
+
+/*加号符号*/
+.jiahao{
+    display:block;
+    width: 35px;
+    height: 35px;
+    background-color: #EF426F;
+    border-radius:50%;
+    margin-right:10px;
+    transition:all .3s linear;
+}
+.jiahao>span:first-child{
+    display:block;
+    position:absolute;
+    width: 22px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 25px;
+    top:15px;
+    left:7px;
+}
+.jiahao>span:nth-child(2){
+    display:block;
+    position:absolute;
+    width: 22px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 25px;
+    transform:rotate(90deg);
+    top:15px;
+    left:7px;
+}
+.small-title a:hover .jiahao{
+    transform:rotate(180deg);
+}
+
+/*加号右侧的链接*/
+.small-title a{
+    color:#EF426F;
+    font-size: 20px;
+    line-height:35px;
+    margin-right:10px;
+}
+
+/*精品别墅楼层,比较特殊,需要重新定位,精选酒店楼层与之相似*/
+.floor4 .item-title p:nth-child(1){
+    position:absolute;
+    top:20px;
+    left:10px;
+    font-size: 14px;
+}
+.floor4 .item-title p:nth-child(2){
+    position:absolute;
+    top:40px;
+    left:10px;
+    font-size: 13px;
+}
+.floor4 .item-title span:nth-child(3){
+    position:absolute;
+    top:80px;
+    left:10px;
+    font-size: 14px;
+}
+
+/*精品酒店楼层*/
+.floor7 .item-title p:nth-child(1){
+    position:absolute;
+    top:20px;
+    left:10px;
+    font-size: 14px;
+}
+.floor7 .item-title p:nth-child(2){
+    position:absolute;
+    top:40px;
+    left:10px;
+    font-size: 13px;
+}
+
+/*杂志楼层*/
+.floor8 .item-title p:nth-child(1){
+    position:absolute;
+    top:20px;
+    left:10px;
+    font-size: 14px;
+}
+.floor8 .item-title span:nth-child(2){
+    position:absolute;
+    top:80px;
+    left:10px;
+    font-size: 14px;
+}
+.floor8 .item-title span:nth-child(3){
+    position:absolute;
+    top:80px;
+    right:10px;
+    font-size: 14px;
+}
+
+/*电梯样式*/
+
+.stair_a1{
+    color:rgb(255, 0, 85);
+}
+.stair_a2{
+    color:#a8c001;
+}
+.stair_a3{
+    color:rgba(0, 204, 255, 0.733);
+}
+.stair_a4{
+    color:rgb(255, 153, 0);
+}
+.stair_a5{
+    color:rgba(0, 204, 255, 0.733);
+}
+.stair_a6{
+    color:rgb(255, 0, 85);
+}
+.stair_a7{
+    color:#a8c001;
+}
+.stair_a8{
+    color:rgb(255, 153, 0);
+}
+
+
+
+.stair{
+    width: 47px;
+    height: 0;
+    position:fixed;
+    top:10%;
+    right:27%;
+    margin-right:-260px;
+    overflow: hidden;
+    transition:all .5s ease-in-out;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.stair>a{
+    display:block;
+    width: 47px;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top:10px;
+    transition:all .15s linear;
+    position: relative;
+}
+.stair>a:hover{
+    color:#fff;
+    background-color: #cb5977;
+}
+
+
+.stair a::after{
+    content:'';
+    display:block;
+    width:24px;
+    height:1px;
+    background-color: rgba(0, 0, 0, 0.364);
+    position:absolute;
+    left:13px;
+    top:60px;
+}
+
+/*楼层高亮*/
+.highlight {
+    background-color: #cb5977;
+    color: #fff;
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type='text/css'>
+        @font-face{
+            font-family: 'Montserrat';
+            src:'../font/Montserrat-Regular.ttf'
+        }
+    </style>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="css/destination.css">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=XpSGZTGQAtklG5hQ9zleBNszvWrcxB9G">
+    </script>
+</head>
+<body>
+    <header class='header-son pr'>
+
+    </header>
+    <div class='main'>
+        <div class="container">
+            <div id='map'></div>
+            <div class='content1'>
+                <div class='title'>
+                    <p>热门目的地 Best Destinations</p>
+                </div>
+                <div class='row'>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/1.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>日本</p>
+                            <p class='old-title'>亚洲</p>
+                            <p class='toggle-title'>Japan</p>
+                            <p class='toggle-title'>Asia</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/2.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>马尔代夫</p>
+                            <p class='old-title'>亚洲</p>
+                            <p class='toggle-title'>Maldives</p>
+                            <p class='toggle-title'>Asia</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/3.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>夏威夷</p>
+                            <p class='old-title'>北美洲</p>
+                            <p class='toggle-title'>Hawaii</p>
+                            <p class='toggle-title'>North America</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/4.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>泰国</p>
+                            <p class='old-title'>亚洲</p>
+                            <p class='toggle-title'>Thailand</p>
+                            <p class='toggle-title'>Asia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/5.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>南非</p>
+                            <p class='old-title'>非洲</p>
+                            <p class='toggle-title'>South Africa</p>
+                            <p class='toggle-title'>Africa</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/6.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>芬兰</p>
+                            <p class='old-title'>欧洲</p>
+                            <p class='toggle-title'>Finland</p>
+                            <p class='toggle-title'>Europe</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/7.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>冰岛</p>
+                            <p class='old-title'>欧洲</p>
+                            <p class='toggle-title'>Iceland</p>
+                            <p class='toggle-title'>Europe</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/8.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>挪威</p>
+                            <p class='old-title'>欧洲</p>
+                            <p class='toggle-title'>Norway</p>
+                            <p class='toggle-title'>Europe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/9.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>斐济</p>
+                            <p class='old-title'>大洋洲</p>
+                            <p class='toggle-title'>Fiji</p>
+                            <p class='toggle-title'>Oceania</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/10.png" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>斯里兰卡</p>
+                            <p class='old-title'>亚洲</p>
+                            <p class='toggle-title'>Sri Lanka</p>
+                            <p class='toggle-title'>Asia</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/11.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>东非</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>East Africa</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/12.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>南部非洲</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>Southern Africa</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/13.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>东南亚与南亚</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>Southeast Asia and South Asia</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/14.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>大洋洲</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>Oceania</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/15.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>北欧</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>Northern Europe</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/16.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>中东与北非</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>Middle East and North Africa</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/17.png" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>南极与北极</p>
+                            <p class='old-title'></p>
+                            <p class='toggle-title'>Antarctic and Arctic</p>
+                            <p class='toggle-title'></p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/18.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>云南</p>
+                            <p class='old-title'>亚洲,中国</p>
+                            <p class='toggle-title'>YunNan</p>
+                            <p class='toggle-title'>Asia,China</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/19.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>浙江</p>
+                            <p class='old-title'>亚洲,中国</p>
+                            <p class='toggle-title'>ZheJiang</p>
+                            <p class='toggle-title'>Asia,China</p>
+                        </div>
+                    </div>
+                    <div class='item'>
+                        <div class='item-image'>
+                            <img src="./img/destination/20.jpg" alt="">
+                        </div>
+                        <div class='item-title'>
+                            <p class='old-title'>海南</p>
+                            <p class='old-title'>亚洲,中国</p>
+                            <p class='toggle-title'>HaiNan</p>
+                            <p class='toggle-title'>Asia,China</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='content2'>
+                <div class='title'>
+                    <p>按目的地查询 Choose A Destination</p>
+                </div>
+                <div class='choose'>
+                    <h3>亚洲 Asia</h3>
+                    <ul class='height-40'>
+                        <li><a>中国 China</a></li>
+                        <li><a>韩国 Korea</a></li>
+                        <li><a>日本 Japan</a></li>
+                    </ul>
+                    <h3>拉丁美洲 Latin America</h3>
+                    <ul class='height-80'> 
+                        <li><a>阿根廷 Argentina</a></li>
+                        <li><a>巴西 Brazil</a></li>
+                        <li><a>古巴 Cuba</a></li>
+                        <li><a>秘鲁 Peru</a></li>
+                        <li><a>墨西哥 Mexico</a></li>
+                    </ul>
+                    <h3>中东与北非 MIDE and North Africa</h3>
+                    <ul class='height-80'>
+                        <li><a>阿联酋 UAE</a></li>
+                        <li><a>阿曼 Oman</a></li>
+                        <li><a>埃及 Egypt</a></li>
+                        <li><a>卡塔尔 Qatar</a></li>
+                        <li><a>摩洛哥 Morocco</a></li>
+                    </ul>
+                    <h3>西欧与地中海 Western Europe and the Mediterranean</h3>
+                    <ul class='height-200'>
+                        <li><a>爱尔兰 Ireland</a></li>
+                        <li><a>德国 Germany</a></li>
+                        <li><a>法国 France</a></li>
+                        <li><a>荷兰 The Netherlands</a></li>
+                        <li><a>黑山 Montenegro</a></li>
+                        <li><a>马耳他 Malta</a></li>
+                        <li><a>摩纳哥 Monaco</a></li>
+                        <li><a>葡萄牙 Portugal</a></li>
+                        <li><a>瑞士 Switzerland</a></li>
+                        <li><a>土耳其 Turkey</a></li>
+                        <li><a>西班牙 Spain</a></li>
+                        <li><a>意大利 Italy</a></li>
+                        <li><a>英国 UK</a></li>
+                    </ul>
+                    <h3>大洋洲 Oceania</h3>
+                    <ul class='height-80'>  
+                        <li><a>澳大利亚 Australia</a></li>
+                        <li><a>大溪地 Tahiti</a></li>
+                        <li><a>斐济 Fiji</a></li>
+                        <li><a>新西兰 New Zealand</a></li>
+                    </ul>
+                    <h3>北欧 Northern Europe</h3>
+                    <ul class='height-80'>
+                        <li><a>冰岛 Iceland</a></li>
+                        <li><a>丹麦 Denmark</a></li>
+                        <li><a>芬兰 Finland</a></li>
+                        <li><a>格陵兰 Greenland</a></li>
+                        <li><a>挪威 Norway</a></li>
+                        <li><a>瑞典 Sweden</a></li>
+                    </ul>
+                    <h3>东南亚与南亚 Southeast Asia and South Asia</h3>
+                    <ul class='height-200'>
+                        <li><a>不丹 Bhutan</a></li>
+                        <li><a>菲律宾 Philippines</a></li>
+                        <li><a>柬埔寨 Cambodia</a></li>
+                        <li><a>老挝 Laos</a></li>
+                        <li><a>马尔代夫 Maldives</a></li>
+                        <li><a>马来西亚 Malaysia</a></li>
+                        <li><a>缅甸 Myanmar</a></li>
+                        <li><a>尼泊尔 Nepal</a></li>
+                        <li><a>斯里兰卡 Sri Lanka</a></li>
+                        <li><a>泰国 Thailand</a></li>
+                        <li><a>新加坡 Singapore</a></li>
+                        <li><a>印度 India</a></li>
+                        <li><a>印度尼西亚 Indonesia</a></li>
+                        <li><a>越南 Vietnam</a></li>
+                    </ul>
+                    <h3>东欧与俄罗斯 Eastern Europe and Russia</h3>
+                    <ul class='height-40'>
+                        <li><a>俄罗斯 Russia</a></li>
+                        <li><a>捷克 Czech Republic</a></li>
+                    </ul>
+                    <h3>北美 North America</h3>
+                    <ul class='height-40'>
+                        <li><a>加拿大 Canada</a></li>
+                        <li><a>美国 USA</a></li>
+                    </ul>
+                    <h3>东非 East Africa</h3>
+                    <ul class='height-80'>  
+                        <li><a>肯尼亚 Kenya</a></li>
+                        <li><a>毛里求斯 Mauritius</a></li>
+                        <li><a>塞舌尔 Seychelles</a></li>
+                        <li><a>坦桑尼亚 Tanzania</a></li>
+                        <li><a>乌干达 Uganda</a></li>
+                    </ul>
+                    <h3>南部非洲 Southern Africa</h3>
+                    <ul class='height-40'>
+                        <li><a>纳米比亚 Namibia</a></li>
+                        <li><a>南非 South Africa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript"> 
+		var map = new BMap.Map("map");
+		var point = new BMap.Point(116.404, 39.915);
+		map.centerAndZoom(point, 5);
+        map.enableScrollWheelZoom(true); 
+        map.addControl(new BMap.NavigationControl());    
+        map.addControl(new BMap.ScaleControl());    
+        map.addControl(new BMap.OverviewMapControl());    
+        map.addControl(new BMap.MapTypeControl());    
+        map.setCurrentCity("北京");
+    </script>   
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src='js/header.js'></script>
+</body>
+</html>

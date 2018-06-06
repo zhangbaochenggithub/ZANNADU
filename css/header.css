@@ -1,0 +1,333 @@
+.header{
+    width: 100%;
+    height:676px;
+    position: relative;
+}
+.header-top{
+    width: 1020px;
+    height:100px;
+    margin:0 auto;
+    padding-top:25px;
+    z-index:100;
+}
+.header-son{
+    width: 100%;
+    height:174px;
+}
+.logo,.logo a img{
+    width: 300px;
+    height: 70px;
+}
+.search{
+    width: 324px;
+    height: 34px;
+}
+#date1,#date2{
+    display:none;
+    width: 0px;
+    height: 32px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    background-image: url('../img/header/日历.png');
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 8px 6px;
+    padding-left:25px;
+    overflow: hidden;
+    opacity:0.5;
+    margin-top:25px;
+}
+#date1{
+    position: absolute;
+    left:150px;
+    /* border:1px solid red; */
+}
+#date2{
+    position: absolute;
+    left:150px;
+    /* border:1px solid red; */
+}
+.search>#search-main{
+    width: 280px;
+    height: 32px;
+    border:none;
+    outline: none;
+    position:absolute;
+    border-radius: 5px;
+    background-image: url('../img/header/定位.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 8px 6px;
+    padding-left:35px;
+    opacity:0.5;
+    margin-top:25px;
+}
+.search>img{
+    width: 32px;
+    height: 32px;
+    position:absolute;
+    right:0px;
+    margin-top:25px;
+}
+input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
+
+/*轮播*/
+.banner{
+    /* border:1px solid red; */
+    width: 100%;
+    min-width:1020px;
+    height: 92%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-size: cover;
+}
+.banner>img{
+    position:absolute;
+    width:100%;
+    min-width:1020px;
+    height:100%;
+    min-height:360px;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:all .7s linear;
+}
+.banner>.banner-show{
+    opacity: 1;
+    z-index:10;
+}
+.banner-button{
+    width: 188px;
+    height: 12px;
+    position: absolute;
+    top:590px;
+    left:45%;
+    z-index:100;
+}
+.banner-button>a{
+    display:inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left:10px;
+}
+.header>.banner-button>.button-selected{
+    background-color: #cb5977;
+}
+
+/*导航*/
+.nav{
+    width: 100%;
+    min-width:1020px;
+    height: 54px;
+    /* border:1px solid red; */
+    position: absolute;
+    bottom:0;
+}
+.nav-fixed{
+    width: 100%;
+    min-width:1020px;
+    height: 70px;
+    position: fixed;
+    top:0;
+    background-color: #fff;
+    z-index:10000;
+}
+.nav-fixed-a{
+    display:inline-block;
+    width: 120px;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+}
+.nav-main{
+    width: 1020px;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.nav-main>a{
+    display:inline-block;
+    width: 120px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+.nav-main>.nav-user{
+    width: 240px;
+    height: 100%;
+    margin-left: 40px;
+    text-align: center;
+}
+.nav-main>.nav-user>a{
+    line-height: 50px;
+}
+
+.header-img{
+    background-image: url('../img/header/header-img.jpg');
+    height:120px;
+    padding:20px;
+}
+.header-content{
+    width: 1020px;
+    margin:0 auto;
+}
+.nav>.nav-main>img{
+    display:none;
+}
+
+
+#rotate1::after,#rotate2::after{
+    content:'';
+    display:inline-block;
+    width: 6px;
+    height: 6px;
+    margin-bottom:4px;
+    margin-left:6px;
+    position: relative;
+    border-bottom:.5px solid black;
+    border-left:.5px solid black;
+    transform: rotate(-45deg);
+    transition:all .2s linear;
+}
+
+.down-menu-row{
+    display:flex;
+    justify-content: space-between;
+    height:auto;
+    margin:15px;
+}
+.down-menu-block{
+    width:24%;
+}
+.down-menu1{
+    width: 1020px;
+    position: absolute;
+    top:100%;
+    left:23%;
+    z-index:500;
+    background-color: #fff;
+    height: 0;
+    /*border:1px solid #cb5977;*/
+    overflow: hidden;
+    transition:all .5s ease-in-out;
+}
+.down-menu1 h4{
+    color:#588CB5;
+    margin:10px;
+}
+.down-menu-block>a{
+    line-height: 24px;
+    font-size:15px;
+}
+.down-menu2{
+    width: 1020px;
+    position: absolute;
+    top:100%;
+    left:23%;
+    z-index:500;
+    background-color: #fff;
+    height: 0px;
+    /*border:1px solid #cb5977;*/
+    overflow: hidden;
+    transition:all .5s ease-in-out;
+}
+.highlight {
+    background-color: #cb5977;
+    color: #fff;
+}
+
+.down-menu2-title {
+    width: 640px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.down-menu2-title>p {
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+.down-menu2-img {
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.down-menu2-content {
+    width: 640px;
+    height: 370px;
+    margin-left: 20px;
+}
+
+.down-menu2-content ul li {
+    width: 145px;
+    height: 145px;
+    display: inline-block;
+    margin-top: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.down-menu2-content ul li a {
+    background-image: url('../img/header/square.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 145px;
+    padding-top: 145px;
+    border-radius: 100%;
+    position: relative;
+    display: block;
+}
+
+.down-menu2-content ul li a div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 145px;
+    height: 22px;
+    background-color: #fff;
+    line-height: 22px;
+    text-align: center;
+}
+
+.down-content2-img1 {
+    background-position: 0 0;
+}
+
+.down-content2-img2 {
+    background-position: 0 -145px;
+}
+
+.down-content2-img3 {
+    background-position: 0 -290px;
+}
+
+.down-content2-img4 {
+    background-position: 0 -435px;
+}
+
+.down-content2-img5 {
+    background-position: 0 -580px;
+}
+
+.down-content2-img6 {
+    background-position: 0 -725px;
+}
+
+.down-content2-img7 {
+    background-position: 0 -870px;
+}
+
+.down-content2-img8 {
+    background-position: 0 -1015px;
+}

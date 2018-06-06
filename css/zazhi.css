@@ -1,0 +1,105 @@
+ul li {
+    list-style: none;
+}
+.main{
+    background:url("../img/zazhi/bg-image-clouds.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    background-color: #D3E9F6;
+}
+.top-pic{
+    background: url("../img/zazhi/bg-image-category.png");
+    width:1000px;
+    height:90px;
+    margin:30px auto;
+}
+.top-pic>img{
+    margin-top:20px;
+    margin-left:20px;
+}
+.top-pic>a{
+    color:black;
+    display: inline-block;
+    border:1px solid black;
+    border-radius: 30px;
+    padding: 0 15px;
+    text-decoration: none;
+    margin-left:8px;
+    height:30px;
+    line-height:30px;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', 'STHeiti', 'Microsoft YaHei', Arial, sans-serif;
+}
+.top-pic>a:hover {
+    background-color: #CB5977;
+    color:white;
+}
+/*下面的主体网页*/
+.container{
+    margin:20px auto;
+    width:1000px;
+}
+.left-container{
+    width:660px;
+}
+.text-1{
+    width:100%;
+    float:left;
+}
+.floor{
+    width:660px;
+    height:128px;
+    margin-bottom: 15px;
+}
+.floor>a>img{
+    width:170px;
+    height: 128px;
+    display:block;
+    float:left;
+}
+.floor>div{
+    width:440px;
+    float:left;
+    padding:0 25px ;
+    height:128px;
+    background-color:white ;
+
+}
+.floor>div:hover{
+    background-color: #CB5977;
+}
+h3{
+    font-weight: normal;
+    font-size: 17px;
+}
+.floor>div>span:last-child{
+    margin-left:320px;
+}
+.floor>div>p{font-size: 14px;}
+.floor span{
+    font-size:12px;
+}
+.a-img{
+    display: block ;
+    margin-bottom:20px;
+}
+.a-img>img{
+    width:660px;
+    height: 158px;
+}
+
+/*右侧栏*/
+.right-container{
+    position: absolute;
+    top:141px;
+    left:1095px;
+}
+.right-floor>h3{
+    margin-left:35px;
+}
+.floor-ul{
+    width:320px;
+    height:571px;
+}
